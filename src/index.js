@@ -101,7 +101,7 @@ export default class Spinner extends React.Component {
     );
 
     return (
-      <Modal onRequestClose={() => this.close()} visible={visible} transparent>
+      <Modal onRequestClose={() => {}} visible={visible} transparent>
         {spinner}
       </Modal>
     );
