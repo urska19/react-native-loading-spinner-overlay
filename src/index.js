@@ -22,6 +22,7 @@ import {
   Modal,
   ActivityIndicator
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 const styles = StyleSheet.create({
   container: {
@@ -54,10 +55,10 @@ export default class Spinner extends React.Component {
   }
 
   static propTypes = {
-    visible: React.PropTypes.bool,
-    color: React.PropTypes.string,
-    size: React.PropTypes.oneOf(SIZES),
-    overlayColor: React.PropTypes.string
+    visible: PropTypes.bool,
+    color: PropTypes.string,
+    size: PropTypes.oneOf(SIZES),
+    overlayColor: PropTypes.string
   };
 
   static defaultProps = {
